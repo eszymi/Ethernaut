@@ -1,0 +1,25 @@
+{
+  "name": "ethernaut-solution",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test test/*.js "
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.13",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.1",
+    "hardhat": "^2.9.0",
+    "prettier": "^2.4.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19"
+  },
+  "dependencies": {
+    "@appliedblockchain/chainlink-contracts": "0.0.4",
+    "dotenv": "^10.0.0"
+  },
+  "mocha": {
+    "timeout": 10000000
+  }
+}
