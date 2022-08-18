@@ -66,9 +66,9 @@ You'll know you did it right if you can run ```yarn --version``` and you see a r
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-I worked on forked rinkeby chain. Thanks to that I was able to work with challenge contract directly and avoid wait for confirmation from the chain. So my work was more quicker. To run your own forked chain run in new terminal ```sh yarn hardhat node```. As long as this terminal is open you will work on forked chain. If you want to work with not forked chain go to the hardhat.config.js file and set enabled to false inside forking part.
+I worked on forked rinkeby chain. Thanks to that I was able to work with challenge contract directly and avoid wait for confirmation from the chain. So my work was more quicker. To run your own forked chain run in new terminal ``` yarn hardhat node```. As long as this terminal is open you will work on forked chain. If you want to work with not forked chain go to the hardhat.config.js file and set enabled to false inside forking part.
 
-In folder contracts are contracts from ethernauts. The solutions of them you could find in the folder test. To run them use ```sh yarn hardhat test```. It will run all tests inside this folder. If you want to run only one test run ```sh yarn hardhat test ./test/<name of the test>.js```.
+In folder contracts are contracts from ethernauts. The solutions of them you could find in the folder test. To run them use ``` yarn hardhat test```. It will run all tests inside this folder. If you want to run only one test run ``` yarn hardhat test ./test/<name of the test>.js```.
 
 <!-- CONTRIBUTING -->
 ## Contributing
