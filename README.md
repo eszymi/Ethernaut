@@ -35,7 +35,7 @@
 
 This repo contains solutions of ethernaut's challenge made in hardhat. I added many helpful comments inside my code to help everyone who, similar to me, is on the very beginig of the journey with blockchain. When I have been creating this repo I wondered where I had problems and what kind of help I needed. I will be very grateful if this repo could help you, even a bit.
 
-Addidionaly I decided make a blog where I want to describe aspect of theory which is neccesery in every challange. But using of this opportunity I want to write there significantly more theory than is needed to solve ethernaut's problems, because I think this is a great place to it. The link to this blog is here:  
+Addidionaly I decided make a [blog](https://medium.com/@eszymi) where I want to describe aspect of theory which is neccesery in every challange. But using of this opportunity I want to write there significantly more theory than is needed to solve ethernaut's problems, because I think this is a great place to it.   
 
 
 <!-- GETTING STARTED -->
