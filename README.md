@@ -104,7 +104,7 @@ Project Link: [https://github.com/eszymi/Ethernaut](https://github.com/eszymi/Et
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* During this work I learn a lot from [cmichael](https://cmichel.io/ethernaut-solutions/). Thank you.
+* During this work I learn a lot from [cmichel](https://cmichel.io/ethernaut-solutions/). Thank you.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
