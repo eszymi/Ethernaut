@@ -19,6 +19,6 @@ it("Solves the challenge 'Fallout'", async () => {
     await tx.wait(1)
 
     // Check if we our address is the owner
-    owner = await challenge.owner()
+    let owner = await challenge.owner()
     assert(player.address == owner, "Player's address is not owner of contract")
 })
