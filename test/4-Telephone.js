@@ -16,7 +16,7 @@ beforeEach(async () => {
     attacker = await attackerFactory.deploy(challenge.address)
 })
 
-it("Solves the challenge 'CoinFlip'", async () => {
+it("Solves the challenge 'Telephone'", async () => {
     tx = await attacker.changeOwner()
     await tx.wait(1)
 
