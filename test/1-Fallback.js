@@ -1,16 +1,15 @@
-const { assert, expect } = require("chai")
-const { network, deployments, ethers, waffle } = require("hardhat")
+const { assert } = require("chai")
+const { ethers, waffle } = require("hardhat")
 require("dotenv").config()
-
 
 const provider = waffle.provider
 let player, challenge, challengeAddress, tx
 
 beforeEach(async () => {
-    accounts = await ethers.getSigners() // could also do with getNamedAccounts
+    accounts = await ethers.getSigners()
     player = accounts[0]
     const challengeFactory = await ethers.getContractFactory(`Fallback`)
-    challengeAddress = process.env.CHALLENGEADDRESS1  //address of my instance contract
+    challengeAddress = process.env.CHALLENGEADDRESS1 //address of my instance contract
     challenge = await challengeFactory.attach(challengeAddress)
 })
 

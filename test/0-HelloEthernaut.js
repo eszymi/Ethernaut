@@ -1,5 +1,4 @@
-const { assert, expect } = require("chai")
-const { network, deployments, ethers } = require("hardhat")
+const { ethers } = require("hardhat")
 require("dotenv").config()
 
 const abi = [
@@ -102,7 +101,7 @@ const abi = [
 let player, challenge, challengeAddress, tx
 
 beforeEach(async () => {
-    accounts = await ethers.getSigners() // could also do with getNamedAccounts
+    accounts = await ethers.getSigners()
     player = accounts[0]
     challengeAddress = process.env.CHALLENGEADDRESS0 //address of my instance contract
     challenge = await ethers.getContractAt(abi, challengeAddress)
