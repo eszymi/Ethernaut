@@ -22,7 +22,7 @@ beforeEach(async () => {
 })
 
 it("Solves the challenge 'Force'", async () => {
-    /*By selfdestroing of contract we force sending Ether to attacking contract */
+    /*By selfdestroing of contract we force sending Ether to attacked contract */
     tx = await attacker.attack()
     await tx.wait(1)
 
