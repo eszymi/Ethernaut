@@ -15,7 +15,7 @@ beforeEach(async () => {
 
     const attackerFactory = await ethers.getContractFactory(`ForceAttacker`)
     /* We have to deploy ForceAttack contract with some Ether.
-    This value will be send to attacking contract (Force).*/
+    This value will be send to attacked contract (Force).*/
     attacker = await attackerFactory.deploy(challenge.address, {
         value: ethers.utils.parseUnits("1", `wei`),
     })

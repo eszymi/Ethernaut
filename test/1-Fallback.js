@@ -1,4 +1,4 @@
-const { assert } = require("chai")
+const { assert, expect } = require("chai")
 const { ethers, waffle } = require("hardhat")
 require("dotenv").config()
 
