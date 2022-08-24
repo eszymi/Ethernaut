@@ -14,11 +14,7 @@ beforeEach(async () => {
     challenge = await challengeFactory.attach(challengeAddress)
 
     const attackerFactory = await ethers.getContractFactory(`ReentranceAttacker`)
-    /* We have to deploy ReentranceAttack contract with some Ether.
-    This value will be send to attacked contract (Reentrance).*/
-    attacker = await attackerFactory.deploy(challenge.address, {
-        value: ethers.utils.parseUnits("0.0015", `ether`),
-    })
+    attacker = await attackerFactory.deploy(challenge.address)
 })
 
 it("Solves the challenge 'Reentrance'", async () => {
