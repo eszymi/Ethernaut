@@ -18,15 +18,11 @@ beforeEach(async () => {
 })
 
 it("Solves the challenge 'GatekeeperOne'", async () => {
-    const address = await player.getAddress()
-    const uint16TxOrigin = address.slice(-4)
-    const gateKey = `0x100000000000${uint16TxOrigin}`
-
     const GasToUse = 800000
     for (let i = 0; i < 8191; i++) {
         try {
             console.log(i)
-            await attacker.attack(gateKey, GasToUse + i, {
+            await attacker.attack(GasToUse + i, {
                 gasLimit: `950000`,
             })
             break
