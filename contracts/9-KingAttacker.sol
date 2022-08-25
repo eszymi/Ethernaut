@@ -16,6 +16,9 @@ contract KingAttacker {
     }
 
     receive() external payable {
+        /*When contract King will try send Ether to this contract,
+        function revert make an error. This will stop of receiving Ether
+        and the next lines in King contract won't be executed. */
         revert("I won't relinquish!");
     }
 

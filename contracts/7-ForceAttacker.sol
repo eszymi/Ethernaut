@@ -11,6 +11,9 @@ contract ForceAttacker {
     }
 
     function attack() public {
+        /*When contract uses selfdestruct it is removing 
+        from the blockchain and the Ether from it is 
+        send to the pointed address. */
         selfdestruct(forceAddress);
     }
 }

@@ -19,6 +19,8 @@ contract CoinFlipAttacker {
     }
 
     function flip() public {
+        /*We copycut the way how CoinFlip contract
+        generate 'random' value. */
         uint256 blockValue = uint256(blockhash(block.number.sub(1)));
 
         if (lastHash == blockValue) {

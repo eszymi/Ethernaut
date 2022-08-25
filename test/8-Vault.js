@@ -16,7 +16,9 @@ beforeEach(async () => {
 
 it("Solves the challenge 'Vault'", async () => {
     /*Password is second variable, so we have to check variable number 1.
-    This is, because we start counting from zero. */
+    This is, because we start counting from zero. More about way how 
+    Solidity stores variables 
+    https://medium.com/coinmonks/ethernaut-vault-how-to-read-the-secret-988851a27c08*/
     let password = await provider.getStorageAt(challenge.address, 1)
     tx = await challenge.unlock(password)
     await tx.wait(1)

@@ -14,7 +14,10 @@ beforeEach(async () => {
 })
 
 it("Solves the challenge 'Fallout'", async () => {
-    // Call function which make us an owner of the contract
+    /* Call function which make us an owner of the contract.
+    Because in this contract someone forgot about keyword
+    'constructor' we could use Fal1out like a normal function.*/
+
     tx = await challenge.Fal1out()
     await tx.wait(1)
 

@@ -15,7 +15,9 @@ beforeEach(async () => {
 })
 
 it("Solves the challenge 'Token'", async () => {
-    // give receiver more token that we have
+    /*Give receiver more token that we have. Thanks that we use underflow 
+    effect:
+    https://medium.com/coinmonks/ethernaut-token-what-if-our-alphabet-could-have-only-two-letters-6173d63c62ce */
     tx = await challenge.transfer(receiver.address, 21)
     await tx.wait(1)
 
