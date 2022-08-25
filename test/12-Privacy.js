@@ -26,9 +26,11 @@ it("Solves the challenge 'Privacy'", async () => {
     let password = await provider.getStorageAt(challenge.address, 5)
     /*Now we have the 32 bytes password, but we need 16 bytes.
     Solidity when convert bigger number of bytes to smaller,
-    discards the right-most bytes. So we need the first 16 bytes.
+    discards the right-most bytes 
+    https://betterprogramming.pub/solidity-tutorial-all-about-conversion-661130eb8bec 
+    So we need the first 16 bytes.
     Every bytes is represent by two digits (this digits is hexadecimals),
-    it ask why we multiply 16 by 2.     Additionally we need 
+    it ask why we multiply 16 by 2. Additionally we need 
     the first two signs (0x) because they represent that
     the number is hexadecimals.*/
     password = password.substring(0, 16 * 2 + 2)
