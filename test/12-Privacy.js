@@ -24,6 +24,7 @@ it("Solves the challenge 'Privacy'", async () => {
     3,4 and 5. We need value of data[2], so the value of the
     last element. Therefore, we look on the slot number 5 */
     let password = await provider.getStorageAt(challenge.address, 5)
+    
     /*Now we have the 32 bytes password, but we need 16 bytes.
     Solidity when convert bigger number of bytes to smaller,
     discards the right-most bytes 
