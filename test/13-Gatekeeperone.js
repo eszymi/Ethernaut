@@ -19,6 +19,7 @@ beforeEach(async () => {
 
 it("Solves the challenge 'GatekeeperOne'", async () => {
     const GasToUse = 800000
+
     for (let i = 0; i < 8191; i++) {
         try {
             console.log(i)
