@@ -1,8 +1,7 @@
 const { assert } = require("chai")
-const { ethers, waffle } = require("hardhat")
+const { ethers } = require("hardhat")
 require("dotenv").config()
 
-const provider = waffle.provider
 let player, challenge, challengeAddress, tx, receiver
 
 beforeEach(async () => {
