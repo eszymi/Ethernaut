@@ -3,7 +3,7 @@ const { ethers, waffle } = require("hardhat")
 require("dotenv").config()
 
 const provider = waffle.provider
-let player, challenge, challengeAddress, tx, attacker
+let player, challenge, challengeAddress, tx
 
 beforeEach(async () => {
     accounts = await ethers.getSigners()
@@ -12,9 +12,6 @@ beforeEach(async () => {
     challengeAddress = process.env.CHALLENGEADDRESS22 //address of my instance contract
     const challengeFactory = await ethers.getContractFactory(`Dex`)
     challenge = await challengeFactory.attach(challengeAddress)
-
-    const attackerFactory = await ethers.getContractFactory(`DexAttacker`)
-    attacker = await attackerFactory.deploy(challenge.address)
 })
 
 it("Solves the challenge 'Dex'", async () => {
